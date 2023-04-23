@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search Engine</title>
+	<link rel="icon" href="images/icon.png" type="image/x-icon">
+	<style>
+		body {
+			background-image: url("images/image.jpg");
+			background-size: cover;
+			background-blur: 10px;
+			background-color: rgba(255, 255, 255, 0.5);
+			height: 100vh;
+		}
+
+		.search-container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100%;
+		}
+
+		.search-box {
+			padding: 32px;
+			border: none;
+			border-radius: 48px;
+			background: linear-gradient(to left, #33ccff 0%, #cc99ff 100%);
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+			font-size: 36px;
+			outline: none;
+			transition: all 0.2s ease-in-out;
+			width: 860px;
+			margin-bottom: 20px;
+			text-align: center;
+		}
+
+		.search-box:hover {
+			transform: scale(1.05);
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+			z-index: 1;
+			position: relative;
+		}
+
+		.search-button-container {
+			display: flex;
+			align-items: center;
+			background-color: none;
+			border: none;
+			border-radius: 48px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+			cursor: pointer;
+			font-size: 24px;
+			outline: none;
+			padding: 26px;
+			transition: all 0.2s ease-in-out;
+			width: 760px;
+			margin-bottom: 20px;
+		}
+
+		.search-button-container:hover {
+			transform: scale(1.05);
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+			z-index: 1;
+			position: relative;
+		}
+
+		.search-button {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: row;
+			padding: 16px 32px;
+			border-radius: 48px;
+			background-color: #eee;
+			color: #333;
+			text-decoration: none;
+			margin: 0 5px;
+			transition: all 0.2s ease-in-out;
+			position: relative;
+			height: 48px; 
+			width: 126px; 
+		}
+
+		.search-button img {
+ 			 width: 32px;
+ 			 height: 32px;
+ 			 margin-right: 8px;
+		}
+		.search-button:hover {
+			background: linear-gradient(to right, #33ccff 0%, #cc99ff 100%);
+		}
+	</style>
+</head>
+<body>
+	<div class="search-container">
+		<input type="text" placeholder="Search" class="search-box" id="search-box">
+		<div class="search-button-container">
+			<a href="#" class="search-button" onclick="googleSearch()"><img src="images/google.svg" alt="google">Google</a>
+			<a href="#" class="search-button" onclick="bingSearch()"><img src="images/bing.svg" alt="bing">Bing</a>
+			<a href="#" class="search-button" onclick="duckduckgoSearch()"><img src="images/duckduckgo.svg" alt="duckduckgo">DuckDuckGo</a>
+			<a href="#" class="search-button" onclick="showAllResults()"><img src="images/showall.svg" alt="showall">ShowAll</a>
+			  
+		</div>
+	</div>
+	<script>
+		const searchBox = document.getElementById("search-box");
+
+searchBox.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) { 
+        showAllResults();
+    }
+});
+		function googleSearch() {
+			var query = document.getElementById("search-box").value;
+			window.location.href = "https://www.google.com/search?q=" + query;
+		}
+
+		function bingSearch() {
+    		var query = document.getElementById("search-box").value;
+    		window.location.href = 
+"https://www.bing.com/search?q=" + query;
+		}
+        
+		function duckduckgoSearch() {
+    		var query = document.getElementById("search-box").value;
+    		window.location.href = 
+"https://duckduckgo.com/?q=" + query;
+		}
+		function showAllResults() {
+			var searchBoxValue = document.getElementById("search-box").value;
+			window.open("https://www.google.com/search?q=" + searchBoxValue);
+			window.open("https://www.bing.com/search?q=" + searchBoxValue);
+			window.open("https://duckduckgo.com/?q=" + searchBoxValue);
+		}
+	</script>
+</body>
+</html>
