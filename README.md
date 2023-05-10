@@ -20,6 +20,10 @@ You can preview the webpage [here](https://vijayks01.github.io/search-engine/).
 
 This webpage was created by VijayKumar S. Feel free to contribute to the project by submitting a pull request or creating an issue.
 
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/VIJAYKS01/search-engine/blob/main/LICENSE) file for details.
+
 ## Screenshot's 
 
 ![image](https://github.com/VIJAYKS01/search-engine/assets/95979108/5d6067ed-f23b-4e26-b959-42c13ee8c441)
