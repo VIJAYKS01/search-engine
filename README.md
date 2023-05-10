@@ -20,4 +20,6 @@ You can preview the webpage [here](https://vijayks01.github.io/search-engine/).
 
 This webpage was created by VijayKumar S. Feel free to contribute to the project by submitting a pull request or creating an issue.
 
+## Screenshot's 
+
 ![image](https://github.com/VIJAYKS01/search-engine/assets/95979108/5d6067ed-f23b-4e26-b959-42c13ee8c441)
