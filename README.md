@@ -14,7 +14,7 @@ This webpage was built using HTML, CSS, and JavaScript.
 
 ## Preview
 
-You can preview the webpage [here](https://vijayks01.github.io/search-engine/). 
+You can preview the webpage [here]([https://vijayks01.github.io/search-engine/](https://github.com/VIJAYKS01/search-engine/blob/main/index.html)). 
 
 ## Credits
 
@@ -23,6 +23,8 @@ This webpage was created by VijayKumar S. Feel free to contribute to the project
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](https://github.com/VIJAYKS01/search-engine/blob/main/LICENSE) file for details.
+
+
 
 ## Screenshot's 
 
