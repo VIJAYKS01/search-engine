@@ -14,7 +14,7 @@ This webpage was built using HTML, CSS, and JavaScript.
 
 ## Preview
 
-You can preview the webpage [here]([https://vijayks01.github.io/search-engine/](https://github.com/VIJAYKS01/search-engine/blob/main/index.html)). 
+You can preview the webpage [here](https://vijayks01.github.io/search-engine/). 
 
 ## Credits
 
