@@ -1,7 +1,7 @@
 const searchBox = document.getElementById("search-box");
   
 searchBox.addEventListener("keyup", function(event) {
-  if (event.keyCode === 13) { 
+  if (event.keyCode === 13 && searchBox.value.trim() !== "") { 
       showAllResults();
   }
 });
